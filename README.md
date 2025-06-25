@@ -123,6 +123,8 @@ For example, if you want to send someone to the first principle of this style gu
   - [7.2 Texture Density Should Be Uniform](#textures-density)
   - [7.3 Textures Should Be No Bigger than 8192](#textures-max-size)
   - [7.4 Textures Should Be Grouped Correctly](#textures-group)
+- [8. C++ Code](#code)
+  - [8.1 Code Structure Conventions](#code-structure)
 
 ## Important Terminology
 
@@ -1355,6 +1357,31 @@ Every texture has a Texture Group property used for LODing, and this should be s
 
 **[⬆ Back to Top](#table-of-contents)**
 
+<a name="8"></a>
+<a name="code"></a>
+## 8. C++ Code
+
+This section will focus on C++ Code Conventions.
+
+<a name="8.1"></a>
+<a name="code-structure"></a>
+### 8.1 Code Structure Conventions
+
+When you create a helper function, always define them above the functions that use them.
+like the example:
+
+void ANisseForceHUD::ShowMouseCursor()
+{
+    ...
+}
+
+void ANisseForceHUD::AddScreen(...)
+{
+    ShowMouseCursor();
+    ...
+}
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Major Contributors
 
