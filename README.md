@@ -1370,6 +1370,7 @@ This section will focus on C++ Code Conventions.
 When you create a helper function, always define them above the functions that use them.
 like the example:
 
+```
 void ANisseForceHUD::ShowMouseCursor()
 {
     ...
@@ -1380,6 +1381,7 @@ void ANisseForceHUD::AddScreen(...)
     ShowMouseCursor();
     ...
 }
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 
